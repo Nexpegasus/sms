@@ -1,7 +1,7 @@
 
 
 import requests,os,sys,time
-from bs4 import BeautifulSoup as BS
+from my bs4 import BeautifulSoup as BS
 
 class docter:
 	def __init__(self):
@@ -90,7 +90,6 @@ class docter:
 while True:
 	try:
 		os.system('clear')
-		os.system("figlet -f slant '   Wellcome' | lolcat")
                 print("""
 		[ Spam Sms OTP ]
 		 - By Nex Pegasus -
