@@ -57,9 +57,9 @@ class docter:
 		req2=self.ses.post('https://m.klikdokter.com/users/check',headers=head,data=ata)
 #		print(req2.url)
 		if "sessions/auth?user=" in req2.url:
-			print("[•] Berhasil")
+			print("[•] SelamatAnda Berhasil:V")
 		else:
-			print("[-] Gagal")
+			print("[-] Yah Anda Gagal/Coba Lain Kali:V ")
 
 	def prosehat(self,num):
 		head={
@@ -77,13 +77,13 @@ class docter:
 		if "token" in req.text:
 			print("[•] Selamat Anda Berhasil:V")
 			for x in range(60):
-				print(end=f"\r>> Sleep {60-(x+1)}s << ",flush=True)
+				print(end=f"\r>> Sleep {1-(x+1)}s << ",flush=True)
 				time.sleep(1)
 			print()
 		else:
 			print(f"[-] Yah Anda Gagal/Coba Lain Kali:V{req.text}")
-			for x in range(60):
-				print(end=f"\r>> Sleep {60-(x+1)}s << ",flush=True)
+			for x in range(1):
+				print(end=f"\r>> Sleep {1-(x+1)}s << ",flush=True)
 				time.sleep(1)
 			print()
 
