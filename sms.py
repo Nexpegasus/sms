@@ -90,7 +90,8 @@ class docter:
 while True:
 	try:
 		os.system('clear')
-		print("""
+		os.system("figlet -f slant '   Wellcome' | lolcat")
+                print("""
 		[ Spam Sms OTP ]
 		 - By Nex Pegasus -
 [ Spam List ]
